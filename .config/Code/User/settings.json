@@ -18,7 +18,8 @@
     "haskell.manageHLS": "GHCup",
     "git.confirmSync": false,
     "window.zoomLevel": 1,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -52,5 +53,7 @@
     },
     "[elixir]": {
         "editor.defaultFormatter": "saratravi.elixir-formatter"
-    }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.explorerKind": "external"
 }
