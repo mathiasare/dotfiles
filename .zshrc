@@ -118,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/omp.toml)"
 
 # bun completions
 [ -s "/home/are/.bun/_bun" ] && source "/home/are/.bun/_bun"
