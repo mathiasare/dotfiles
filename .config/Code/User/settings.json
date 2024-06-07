@@ -55,5 +55,6 @@
         "editor.defaultFormatter": "saratravi.elixir-formatter"
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.explorerKind": "external"
+    "terminal.explorerKind": "external",
+    "github.copilot.editor.enableAutoCompletions": true
 }
