@@ -79,13 +79,13 @@ plugins=(
  git
  zsh-autosuggestions
  zsh-syntax-highlighting
- asdf
  vscode
  zoxide
  golang
  docker
  docker-compose
  dotenv
+ poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -151,11 +151,13 @@ export PATH="/home/are/.local/bin:$PATH"
 #Snap
 export PATH="/snap/bin:$PATH"
 
-#Idp3
-export PATH="/home/are/idp3/bin:$PATH"
-
 #Elixir
 export PATH="/bin/elixir:$PATH"
+
+#Android
+export ANDROID_HOME="/home/are/Android/Sdk"
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Alias
 alias bat="batcat"
@@ -167,5 +169,4 @@ alias fc='file=$(find "$(pwd)" -mindepth 1 -maxdepth 7 -type f | fzf) && code "$
 
 alias ff='file=$(find "$(pwd)" -mindepth 1 -maxdepth 7 -type f | fzf) && xdg-open "$file"'
 
-alias idp="idp3-ide"
-
+eval "$(~/.local/bin/mise activate zsh)"

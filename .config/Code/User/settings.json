@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Tokyo Night",
     "workbench.iconTheme": "material-icon-theme",
     "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.quickSuggestions": {
         "strings": "on"
@@ -56,5 +56,14 @@
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.explorerKind": "external",
-    "github.copilot.editor.enableAutoCompletions": true
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+    "python.analysis.typeCheckingMode": "standard",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
