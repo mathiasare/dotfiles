@@ -1,69 +1,87 @@
 {
-    "workbench.colorTheme": "Tokyo Night",
-    "workbench.iconTheme": "material-icon-theme",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "editor.quickSuggestions": {
-        "strings": "on"
-    },
-    "tailwindCSS.includeLanguages": {
-        "javascript": "javascript",
-        "html": "html",
-        "css": "css"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDelete": false,
-    "haskell.manageHLS": "GHCup",
-    "git.confirmSync": false,
-    "window.zoomLevel": 1,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "git.openRepositoryInParentFolders": "never",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "git.enableSmartCommit": true,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "terminal.integrated.inheritEnv": false,
-    "jupyter.askForKernelRestart": false,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "emmet.includeLanguages": {
-        "html-eex": "html"
-    },
-    "[elixir]": {
-        "editor.defaultFormatter": "saratravi.elixir-formatter"
-    },
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.explorerKind": "external",
-    "github.copilot.editor.enableAutoCompletions": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-    "python.analysis.typeCheckingMode": "standard",
-    "editor.detectIndentation": false,
-    "editor.tabSize": 4,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "html",
+    "css": "css",
+    "phoenix-heex": "html",
+    "elixir": "html"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "haskell.manageHLS": "GHCup",
+  "git.confirmSync": false,
+  "window.zoomLevel": 1,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.enableSmartCommit": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "jupyter.askForKernelRestart": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "emmet.includeLanguages": {
+    "html-eex": "html",
+    "phoenix-heex": "html"
+  },
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.explorerKind": "external",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.analysis.typeCheckingMode": "standard",
+  "editor.detectIndentation": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "diffEditor.renderSideBySide": false,
+  "terminal.integrated.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": true,
+"terminal.integrated.fontSize": 13,
+"themeCheck.checkOnChange": false,
+"themeCheck.checkOnOpen": false,
+"themeCheck.checkOnSave": false,
+"[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+}
 }

@@ -1,3 +1,4 @@
+
 ## Tmux open on startup
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #exec tmux
@@ -76,6 +77,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+ asdf
  git
  zsh-autosuggestions
  zsh-syntax-highlighting
@@ -86,6 +88,7 @@ plugins=(
  docker-compose
  dotenv
  poetry
+ direnv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,7 +129,6 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/omp.toml)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="/home/anaconda3/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/are/google-cloud-sdk/path.zsh.inc' ]; then . '/home/are/google-cloud-sdk/path.zsh.inc'; fi
@@ -135,6 +137,10 @@ if [ -f '/home/are/google-cloud-sdk/path.zsh.inc' ]; then . '/home/are/google-cl
 if [ -f '/home/are/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/are/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f "/home/are/.ghcup/env" ] && source "/home/are/.ghcup/env" # ghcup-env
+
+#NeoVim
+export PATH="/home/are/neovim/bin:$PATH"
+
 # Turso
 export PATH="/home/are/.turso:$PATH"
 . "$HOME/.cargo/env"
@@ -154,10 +160,21 @@ export PATH="/snap/bin:$PATH"
 #Elixir
 export PATH="/bin/elixir:$PATH"
 
+#Chromedriver
+PATH="/home/are/chromedriver/chromedriver:$PATH"
+
+#Java
+export JAVA_HOME="/usr/lib/jvm/openlogic-openjdk-17-hotspot-amd64"
+export PATH=$JAVA_HOME/bin:$PATH
+
 #Android
 export ANDROID_HOME="/home/are/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:/home/are/snap/bin/android-studio/bin
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
 
 # Alias
 alias bat="batcat"
