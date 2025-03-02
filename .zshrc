@@ -124,35 +124,35 @@ source $ZSH/oh-my-zsh.sh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/omp.toml)"
 
 # bun completions
-[ -s "/home/are/.bun/_bun" ] && source "/home/are/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/are/google-cloud-sdk/path.zsh.inc' ]; then . '/home/are/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/are/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/are/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-[ -f "/home/are/.ghcup/env" ] && source "/home/are/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
 #NeoVim
-export PATH="/home/are/neovim/bin:$PATH"
+export PATH="$HOME/neovim/bin:$PATH"
 
 # Turso
-export PATH="/home/are/.turso:$PATH"
+export PATH="$HOME/.turso:$PATH"
 . "$HOME/.cargo/env"
 
 # Zoxide
 eval "$(zoxide init zsh)"
 
 # Go
-export PATH="/home/are/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 #Local
-export PATH="/home/are/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 #Snap
 export PATH="/snap/bin:$PATH"
@@ -161,23 +161,25 @@ export PATH="/snap/bin:$PATH"
 export PATH="/bin/elixir:$PATH"
 
 #Chromedriver
-PATH="/home/are/chromedriver/chromedriver:$PATH"
+PATH="$HOME/chromedriver/chromedriver:$PATH"
 
 #Java
 export JAVA_HOME="/usr/lib/jvm/openlogic-openjdk-17-hotspot-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
 
 #Android
-export ANDROID_HOME="/home/are/Android/Sdk"
+export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:/home/are/snap/bin/android-studio/bin
+export PATH=$PATH:$HOME/snap/bin/android-studio/bin
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 
 # Alias
 alias bat="batcat"
+alias lg="lazygit"
+
 alias fcc='dir=$(find "$(pwd)" -mindepth 1 -maxdepth 7 -type d | fzf) && code "$dir"'
 
 alias fcd='dir=$(find "$(pwd)" -mindepth 1 -maxdepth 7 -type d | fzf) && cd "$dir"'
