@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
-if [[ $# -eq 1 ]]; then
-    selected=$1
-else
-    selected=$(find ~/dev/solo ~/dev/uni/sem3 ~/dev/zenjoy -mindepth 1 -maxdepth 1 -type d | fzf)
-fi
+selected=$(zoxide query -i)
 
 if [[ -z $selected ]]; then
+    echo "selected not found"
     exit 0
 fi
 
@@ -23,4 +20,3 @@ if ! tmux has-session -t=$selected_name 2> /dev/null; then
 fi
 
 tmux switch-client -t $selected_name
-
